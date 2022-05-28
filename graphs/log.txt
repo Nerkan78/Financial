@@ -1,0 +1,19 @@
+2021-11-28 22:53:41.527753
+28 11 2021 4 7 
+Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4425.0)
+
+Traceback (most recent call last):
+  File "Bollinger.py", line 73, in main
+    company_name.send_keys(Keys.DELETE);
+  File "D:\programs\Anaconda\lib\site-packages\selenium\webdriver\remote\webelement.py", line 479, in send_keys
+    'value': keys_to_typing(value)})
+  File "D:\programs\Anaconda\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "D:\programs\Anaconda\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\programs\Anaconda\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4425.0)
+
